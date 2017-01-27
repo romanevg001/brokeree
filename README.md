@@ -1,6 +1,15 @@
-# Angular2HelloWorld
+# Run project
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
+npm i
+copy files in other place:
+angular-cli.json
+karma.conf.js
+package.json
+
+ng init --source-dir app (Answer "Yes" for change files)
+replace back rewrote files
+
+ng serve 
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
