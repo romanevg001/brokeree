@@ -1,12 +1,11 @@
 # Run project
 
 npm i
-copy files in other place:
-angular-cli.json
-karma.conf.js
-package.json
+
+copy files in other place: angular-cli.json, karma.conf.js, package.json
 
 ng init --source-dir app (Answer "Yes" for change files)
+
 replace back rewrote files
 
 ng serve 
