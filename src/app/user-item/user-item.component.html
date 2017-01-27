@@ -1,0 +1,18 @@
+<div class="user-item-component" *ngIf="user">
+  <h3>{{user.name}} (user.username)</h3>
+  <p>Phone: {{user.phone}} | Email: {{user.email}}</p>
+  <p>{{user.address.city}}, {{user.address.street}}, {{user.address.suite}}</p>
+
+  <p>{{user.address.geo.lat}} x {{user.address.geo.lng}}</p>
+
+
+  <ng2-map zoom="12" center="{{user.address.geo.lat}},{{user.address.geo.lng}}" mapTypeId="satellite">
+    <marker position="{{user.address.geo.lat}},{{user.address.geo.lng}}"></marker>
+  </ng2-map>
+
+
+</div>
+
+
+
+

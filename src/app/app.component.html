@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="page-header">
+    <h1>  {{title}}</h1>
+  </div>
+  <ul class="nav nav-pills">
+      <li routerLinkActive="active"><a routerLink="/users">Users</a></li>
+      <li routerLinkActive="active"><a routerLink="/statistics">Word & letter usage statistics</a></li>
+    </ul>
+    <p></p>
+  <router-outlet></router-outlet>
+  <!-- Routed views go here -->
+</div>
