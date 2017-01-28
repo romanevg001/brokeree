@@ -32,7 +32,11 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying to Github Pages
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+//Run `ng github-pages:deploy` to deploy to Github Pages.
+
+git subtree push --prefix dist origin gh-pages
+
+Change url in base tag in index.html
 
 ## Further help
 
