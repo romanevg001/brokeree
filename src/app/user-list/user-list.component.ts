@@ -8,18 +8,18 @@ import { ApiUsersService } from '../user-services/api-users.service';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
-  users: Array<any>;
+  users: Array<any> = ['hj'];
 
   constructor(private _apiUsersService:ApiUsersService) {
       
    }
 
-  ngOnInit() {
-
+  ngOnInit() {   
     this._apiUsersService.getUsers()
       .subscribe((users)=>{
         this.users = users
       })
   }
+
 
 }

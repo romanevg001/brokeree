@@ -2,3 +2,8 @@
 // https://www.typescriptlang.org/docs/handbook/writing-declaration-files.html
 
 declare var System: any;
+declare var stockfish: any;
+declare var BOARD: any;
+declare var G: any;
+declare var FONT_FIT: any;
+declare var KINGDOM: any;

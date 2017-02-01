@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.19-3",
-    "name": "brokeree"
+    "name": "angular2-hello-world"
   },
   "apps": [
     {
@@ -18,9 +18,16 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../src/lib/chess.scss"
       ],
       "scripts": [
+        "../src/lib/board.js",
+        "../src/lib/font_fit.js",
+        "../src/lib/girdle.js",
+        "../src/lib/moves_manager.js",
+        "../src/lib/kingdom.js",
+        "../node_modules/stockfish/src/stockfish.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

@@ -1,0 +1,3 @@
+interface ListenerCallback { 
+    (): void;
+}

@@ -15,6 +15,7 @@ import { UserItemComponent } from './user-item/user-item.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { StatisticsService } from './statistics/statistics.service';
+import { ChessComponent } from './chess/chess.component';
 
 
 
@@ -33,6 +34,10 @@ const routes: Routes = [
       {
         path:'statistics',  
         component: StatisticsComponent,
+      },
+      {
+        path:'chess',  
+        component: ChessComponent,
       }
       
 ];
@@ -42,7 +47,8 @@ const routes: Routes = [
     AppComponent,
     UserItemComponent,
     UserListComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    ChessComponent
   ],
   imports: [
     BrowserModule,
