@@ -3,7 +3,7 @@ var KINGDOM = (function ()
     "use strict";
     
    var board_el = G.cde("div");
-    var board = BOARD(board_el);
+    var board = BOARD(board_el,{pieces_path:"/assets/img/pieces/"});
     var zobrist_keys;
     var stalemate_by_rules;
     var evaler;
@@ -45,12 +45,10 @@ var KINGDOM = (function ()
     
     function load_engine()
     {
-        var worker = new Worker('/lib/stockfish.js'),
+        var worker = new Worker('/assets/lib/stockfish.js'),
             engine = {started: Date.now()},
             que = [];
-        console.log('worker')
-        console.log(worker)
-        console.log(new Worker('/lib/stockfish.js'))
+      
         function get_first_word(line)
         {
             var space_index = -1;//line.indexOf(" ");

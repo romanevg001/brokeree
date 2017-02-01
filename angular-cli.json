@@ -19,15 +19,15 @@
       "mobile": false,
       "styles": [
         "styles.scss",
-        "../src/lib/chess.scss"
+        "../src/assets/lib/chess.scss"
       ],
       "scripts": [
-        "../src/lib/board.js",
-        "../src/lib/font_fit.js",
-        "../src/lib/girdle.js",
-        "../src/lib/moves_manager.js",
-        "../src/lib/kingdom.js",
-        "../node_modules/stockfish/src/stockfish.js"
+        "../src/assets/lib/board.js",
+        "../src/assets/lib/font_fit.js",
+        "../src/assets/lib/girdle.js",
+        "../src/assets/lib/moves_manager.js",
+        "../src/assets/lib/kingdom.js",
+        "../src/assets/lib/stockfish.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
