@@ -3,7 +3,7 @@ var KINGDOM = (function ()
     "use strict";
     
    var board_el = G.cde("div");
-    var board = BOARD(board_el,{pieces_path:"/assets/img/pieces/"});
+    var board = BOARD(board_el,{pieces_path:"assets/img/pieces/"});
     var zobrist_keys;
     var stalemate_by_rules;
     var evaler;
@@ -45,7 +45,7 @@ var KINGDOM = (function ()
     
     function load_engine()
     {
-        var worker = new Worker('/assets/lib/stockfish.js'),
+        var worker = new Worker('assets/lib/stockfish.js'),
             engine = {started: Date.now()},
             que = [];
       
@@ -103,7 +103,6 @@ var KINGDOM = (function ()
             if (engine.stream) {
                 engine.stream(line);
             }
-            console.log(e)
             /// Ignore invalid setoption commands since valid ones do not repond.
             if (line.substr(0, 14) === "No such option") {
                 return;
