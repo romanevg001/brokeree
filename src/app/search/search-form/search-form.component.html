@@ -1,24 +1,57 @@
 
 <form [formGroup]="searchForm" (ngSubmit)="onSubmit(searchForm.value)">
-   <div class="form-group">
-        <label for="from">From</label>
-        <input 
-            id="from" 
-            type="text" 
-            class="form-control"
-             formControlName="from"
-             required
-            >
- 
-            <div *ngIf="from.touched && !from.valid && from.errors">
-                <!--<div *ngIf="from.errors?.required" class="alert alert-danger">
-                    Email is required.
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="form-group">
+            <label for="from">From</label>
+            <input id="from" type="text" class="form-control" formControlName="from">
+    
+                <div *ngIf="from.touched && !from.valid && from.errors">
+                    <!--<div *ngIf="from.errors?.required" class="alert alert-danger">
+                        Email is required.
+                    </div>
+                    <div *ngIf="from.errors?.isItEmail" class="alert alert-danger">
+                        Wrong email.
+                    </div>-->
                 </div>
-                <div *ngIf="from.errors?.isItEmail" class="alert alert-danger">
-                    Wrong email.
-                </div>-->
-            </div>
+        </div>
+      </div>
+    <div class="col-xs-4">
+      <div class="form-group">
+            <label for="to">To</label>
+            <input id="to"  type="text" class="form-control" formControlName="to" />
+      </div>
     </div>
+    <div class="col-xs-4">
+      <div class="checkbox">
+        <label><input type="checkbox" formControlName="instock"> In Stock</label>
+      </div>
+    </div>
+      
+   </div>
+   <div class="row">
+      <div class="col-xs-4">
+          <div class="form-group">
+                <label for="priceFrom">Price from</label>
+                <input id="priceFrom"  type="text" class="form-control" formControlName="priceFrom" />
+          </div>
+       </div>
+      <div class="col-xs-4">
+          <div class="form-group">
+                <label for="priceTo">to</label>
+                <input id="priceTo"  type="text" class="form-control" formControlName="priceTo" />
+          </div>
+      </div>
+      <div class="col-xs-4">
+          <div class="form-group">
+                <label for="color">Color</label>
+                <select id="color"  class="form-control" formControlName="color">
+                  <option *ngFor="let colorItem of colorList">{{colorItem}}</option>
+                </select>
+                <!--[selected]="isColorSelected"<input id="color"  type="text" class="form-control" formControlName="color" />-->
+          </div>
+      </div>
+   </div>
    
     <button class="btn btn-primary" type="submit">Find</button>
 </form>

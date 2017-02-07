@@ -12,4 +12,8 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
+  makeFilter($event){
+      console.log($event)
+  }
+
 }
