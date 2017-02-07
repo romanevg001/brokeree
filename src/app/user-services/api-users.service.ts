@@ -15,7 +15,7 @@ export class ApiUsersService {
    
     getUsers(): Observable<User[]>{
         return this._http.get(AppSettings.url + '/users')
-        .map(e => e.json())
+        .map(e =>  e.json())
     }
 
     getUser(id): Observable<User>{

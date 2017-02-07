@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { HttpModule } from '@angular/http';
 import { Ng2MapModule} from 'ng2-map';
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
@@ -16,6 +17,15 @@ import { UserListComponent } from './user-list/user-list.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { StatisticsService } from './statistics/statistics.service';
 import { ChessComponent } from './chess/chess.component';
+import { SingUpComponent } from './sing-up/sing-up.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { SearchFormComponent } from './search/search-form/search-form.component';
+import { SearchResultComponent } from './search/search-result/search-result.component';
+import { SearchComponent } from './search/search.component';
+
+import { ApiSearchService } from './search/search-services/api-search.service';
+
+
 
 
 
@@ -38,6 +48,18 @@ const routes: Routes = [
       {
         path:'chess',  
         component: ChessComponent,
+      },
+      {
+        path:'singup',  
+        component: SingUpComponent,
+      },
+      {
+        path:'login',  
+        component: LogInComponent,
+      },
+       {
+        path:'search',  
+        component: SearchComponent,
       }
       
 ];
@@ -48,11 +70,17 @@ const routes: Routes = [
     UserItemComponent,
     UserListComponent,
     StatisticsComponent,
-    ChessComponent
+    ChessComponent,
+    SingUpComponent,
+    LogInComponent,
+    SearchFormComponent,
+    SearchResultComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
     Ng2MapModule,
@@ -60,7 +88,7 @@ const routes: Routes = [
    
   ],
   exports: [RouterModule],
-  providers: [ApiUsersService,StatisticsService],
+  providers: [ApiUsersService,StatisticsService, ApiSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,6 +4,8 @@ import 'rxjs/add/operator/switchMap';
 import { AppSettings } from '../app.settings';
 import { ApiUsersService } from '../user-services/api-users.service';
 import { Ng2MapComponent } from 'ng2-map';
+import { User } from './../user-list/user';
+
 
 
 
@@ -14,8 +16,8 @@ import { Ng2MapComponent } from 'ng2-map';
 })
 
 export class UserItemComponent implements OnInit {
-  user;
-  map;
+  user: User;
+  
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,

@@ -1,0 +1,18 @@
+<div>
+  <h5>Result</h5>
+
+  <div class="media"  *ngFor="let item of searchList" >
+    <div class="media-left"><img class="media-object" src="{{item.image}}" alt="..."></div>
+    <div class="media-body">
+      <h4 class="media-heading">{{item.name}}</h4>
+      <p>
+          {{item.data}} <br>
+          {{item.price}} <br>
+          {{item.raiting}} <br>
+          {{item.instock}} <br>
+          {{item.color}} <br>
+      </p>
+    </div>
+  </div>
+
+</div>

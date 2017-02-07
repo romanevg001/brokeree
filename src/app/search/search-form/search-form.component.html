@@ -1,0 +1,24 @@
+
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit(searchForm.value)">
+   <div class="form-group">
+        <label for="from">From</label>
+        <input 
+            id="from" 
+            type="text" 
+            class="form-control"
+             formControlName="from"
+             required
+            >
+ 
+            <div *ngIf="from.touched && !from.valid && from.errors">
+                <!--<div *ngIf="from.errors?.required" class="alert alert-danger">
+                    Email is required.
+                </div>
+                <div *ngIf="from.errors?.isItEmail" class="alert alert-danger">
+                    Wrong email.
+                </div>-->
+            </div>
+    </div>
+   
+    <button class="btn btn-primary" type="submit">Find</button>
+</form>

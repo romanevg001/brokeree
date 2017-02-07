@@ -31,3 +31,15 @@ interface Company {
     "bs"?: string;
 }
 
+interface zoomba extends Array<Geo & Company> {
+    
+}
+
+var zmb:zoomba  = [{
+    "lat": 3,
+    "lng": 4,
+    "name": 'df'
+}]
+// var zmb2:zoomba  = [3,5,7, ...zmb]
+
+console.log(zmb)

@@ -1,7 +1,15 @@
 <div class="container">
   <div class="page-header">
+    <div class="pull-right">
+        <a routerLink="/singup">Sing Up</a> &nbsp;
+        <a routerLink="/login">Log In</a>
+    </div>
+    <div class="pull-right">
+        <a routerLink="/search">Search</a> &nbsp;|&nbsp;
+    </div>
     <h1>  {{title}}</h1>
   </div>
+  
   <ul class="nav nav-pills">
       <li routerLinkActive="active"><a routerLink="/users">Users</a></li>
       <li routerLinkActive="active"><a routerLink="/statistics">Word & letter usage statistics</a></li>

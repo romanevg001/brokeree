@@ -1,0 +1,54 @@
+{
+    "search":[
+        {
+            "id": 1,
+            "name": "Fancy something",
+            "color": "red",
+            "data": 1234564545694,
+            "price": 234567,
+            "raiting": 4,
+            "instock": false,
+            "image": "http://placehold.it/150/8fa5e0"
+        },
+        {
+            "id": 2,
+            "name": "qui eius qui autem sed",
+            "color": "red",
+            "data": 1234564545694,
+            "price": 234567,
+            "raiting": 2,
+            "instock": false,
+            "image": "http://placehold.it/150/15c072"
+        },
+        {
+            "id":3,
+            "name": "officia delectus consequatur vero aut veniam explicabo molestias",
+            "color": "red",
+            "data": 1234564545694,
+            "price": 78567,
+            "raiting": 4,
+            "instock": false,
+            "image": "http://placehold.it/150/4105a5"
+        },
+        {
+            "id": 4,
+            "name": "Sest deserunt velit ipsam",
+            "color": "red",
+            "data": 1287564545694,
+            "price": 234567,
+            "raiting": 5,
+            "instock": false,
+            "image": "http://placehold.it/150/dff9f6"
+        },
+        {
+            "id": 5,
+            "name": "Fperferendis nesciunt eveniet et optio a",
+            "color": "red",
+            "data": 1234564545694,
+            "price": 234567,
+            "raiting": 3,
+            "instock": true,
+            "image": "http://placehold.it/150/531b69"
+        }
+    ]
+}
